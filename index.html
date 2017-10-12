@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tilled You So</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+<!-- Create a header section, fixed scroll, responsive to smaller screens by amalgamating navigation buttons into mobile menu -->
+<div id="header">
+  <div id="logo"></div>
+      <div class="menu-item active-page">Sale</div>
+      <div class="menu-item">Return</div>
+      <div class="menu-item">Admin</div>
+      <div class="menu-item">Stock Take</div>
+  <div class="user">
+    <div class="user-image"></div>
+    <div class="user-name">Test, User</div>
+  </div>
+</div>
+
+<!-- Create a gridded main body section that contains the stock tabs and the till roll -->
+<div id="main-body">
+<!-- Create a stock section container with three tab headings and three seperate divs containing stock, search and departments. By default stock is shown -->
+  <div id="stock-container">
+    <div class="tabs">
+      <div class="tab active-tab"><p>Stock</p></div>
+      <div class="tab"><p>Department</p></div>
+      <div class="tab"><p>Search</p></div>
+    </div>
+<!-- The stock tab should have a list of stock with: a picture(jewellery); brief description a price; availability details; button to add to till roll; -->
+    <div id="tab-page" class="stock active-tab-page">
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Ring Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£100.00</p>
+          <button class="add out">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Tiny Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£250.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+        <div class="stock-item">
+          <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+          <p class="item-name">Special Necklace</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="price">£20.00</p>
+          <button class="add in">Add To Till</button>
+        </div>
+    </div>
+
+<!-- The department list, should be different jewellry sections, with images and name. BONUS take you to all items that are in that department -->
+    <div id="tab-page" class="department"></div>
+
+<!-- The search, simple search box with static example items underneath, showing what is shown in the standard stock list -->
+    <div id="tab-page" class="search"></div>
+
+  </div>
+
+<!-- Create a till roll section aligned to the right side by default, this should include small image, short description, price and quantity. Does not have to work, but bonus if it does. The bottom should have a summary section with total and total vat charged - BONUS add discount items to the till roll - BONUS make the till roll expandable, which shows more details for the items -->
+  <div id="till-roll">
+    <div class="roll-heading"><p>Till Roll</p></div>
+    <div class="roll-list">
+      <div class="roll-item">
+        <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+        <p class="item-name">Special Necklace</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="quantity">Quantity X 1</p>
+      </div>
+      <div class="roll-item">
+        <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+        <p class="item-name">Special Necklace</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="quantity">Quantity X 1</p>
+      </div>
+      <div class="roll-item">
+        <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+        <p class="item-name">Special Necklace</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="quantity">Quantity X 1</p>
+      </div>
+      <div class="roll-item">
+        <img class="stock-image" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+        <p class="item-name">Special Necklace</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="quantity">Quantity X 1</p>
+      </div>
+    </div>
+    <div class="roll-summary"><p>£250 (VAT inc. £50)</p></div>
+  </div>
+</div>
+
+<!-- Each item when clicked should create a pop up box with more info on the item. -->
+<div class="popup">
+  <span class="exit">X</span>
+  <img class="popup-img" src="http://thetuktukaffair.com/wp-content/uploads/2017/10/Necklaces.jpg" />
+  <p class="popup-name">Ring Necklace</p>
+  <p class="popup-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <p class="price-stock">£200 - 20 in stock</p>
+  </p>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>

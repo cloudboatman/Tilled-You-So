@@ -1,0 +1,285 @@
+/* Initial Setup*/
+@font-face{
+ font-family:'Quinzey-Bold';
+ src: url('../assets/Quinzey_Bold.otf');
+}
+@font-face{
+ font-family:'Quinzey';
+ src: url('../assets/Quinzey_Medium.otf');
+}
+body {
+  margin: 0px;
+}
+
+/* Main Menu Setup - using flex to create responsive display */
+#header {
+  width: 100vw;
+  padding: 5px 0px 5px 0px;
+  border-bottom: solid black 1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+#logo {
+  flex: 0.8;
+  background: url('http://thetuktukaffair.com/wp-content/uploads/2017/10/logo.jpg') no-repeat;
+  background-size:contain;
+  height: 40px;
+  min-width:92px;
+  margin-right: 10px;
+}
+
+.menu-item {
+  font-family: 'Quinzey-Bold';
+  flex: 1;
+  font-size: 1.3em;
+  min-width: 70px;
+
+}
+
+.user {
+  display:flex;
+  flex: 1;
+  align-items:center;
+  min-width: 75px;
+}
+
+.user-image {
+  flex: 1;
+  height: 50px;
+  background: url("http://thetuktukaffair.com/wp-content/uploads/2017/10/user.png") no-repeat center;
+  background-size:contain;
+}
+
+.user-name {
+  flex: 1;
+  font-family: 'Quinzey';
+}
+
+.active-page {
+  color: #e373ab;
+}
+
+/* Main body area*/
+#main-body {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: wrap;
+  padding-top: 10px;
+}
+
+/* Stock container */
+#stock-container {
+  flex: 2;
+  border: solid 1px #e373ab;
+  margin: 5px;
+  min-width: 350px;
+}
+
+/* Display the active tab page */
+.active-tab-page {
+  display: flex !important;
+}
+
+/* Stock Tabs */
+.tabs {
+  background-color: #e373ab;
+  color: white;
+}
+
+.tab {
+  display: inline-block;
+  border-right: solid 1px #e373ab;
+  font-family: 'Quinzey-Bold';
+}
+
+.tab > p {
+  padding: 5px 20px 5px 5px;
+  margin: 0px;
+}
+
+.tab:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active-tab {
+  background-color: white;
+  color: #e373ab;
+  font-weight: normal !important;
+}
+
+/* Stock List Items*/
+
+.stock {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+  overflow-y: auto;
+  max-height: 77.7vh;
+}
+
+.stock-item {
+  flex: 1;
+  margin: 5px;
+  font-family: 'Quinzey';
+  min-width: 265px;
+}
+
+.stock-image {
+  max-height: 100px;
+  float: left;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.item-name {
+  margin: 0px;
+  font-size: 1.1em;
+  font-family: 'Quinzey-Bold';
+  cursor: pointer;
+}
+
+.description {
+  margin: 0px;
+}
+
+.price {
+  display: inline-block;
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+.out {
+  color: red;
+}
+
+.in {
+  color: green;
+  cursor: pointer
+}
+
+.add {
+  font-family: 'Quinzey';
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Department Tab */
+.department {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+  overflow-y: auto;
+  max-height: 77.7vh;
+}
+
+/* Search Tab */
+.search {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+  overflow-y: auto;
+  max-height: 466.5px;
+}
+
+
+/* Till Roll*/
+#till-roll {
+  flex: 1;
+  border: solid 1px #e373ab;
+  margin: 5px;
+  height: 85vh;
+  min-width: 250px;
+  position: relative;
+}
+
+.roll-heading {
+  background-color: #e373ab;
+  color: white;
+  display: inline-block;
+  border-right: solid 1px #e373ab;
+  font-family: 'Quinzey-Bold';
+  width: 100%;
+}
+
+.roll-heading > p {
+  margin: 0px;
+  padding: 5px;
+}
+
+.roll-list {
+  font-family: 'Quinzey';
+  display:flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.roll-item {
+  flex: 1;
+  margin: 5px;
+}
+
+.quantity {
+  display: inline-block;
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+.roll-summary {
+  position:absolute;
+  bottom: 0;
+  background-color: #e373ab;
+  color: white;
+  display: inline-block;
+  border-right: solid 1px #e373ab;
+  font-family: 'Quinzey-Bold';
+  width: 100%;
+}
+
+.roll-summary > p {
+  padding: 5px;
+  margin: 0px;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  margin: 20px;
+  border: solid black 1px;
+  padding: 10px;
+  max-width: 90%;
+  font-family: 'Quinzey';
+  opacity: 0.9;
+  background-color: white;
+}
+
+.popup-name {
+  margin: 0px;
+  font-size: 1.1em;
+  font-family: 'Quinzey-Bold';
+}
+
+.popup-img {
+  max-height: 200px;
+  float: left;
+  padding-right: 4px;
+}
+
+.exit {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+}
